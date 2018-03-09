@@ -7,10 +7,7 @@
             "label": "install",
             "type": "shell",
             "command": "mvn -B install",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "test",

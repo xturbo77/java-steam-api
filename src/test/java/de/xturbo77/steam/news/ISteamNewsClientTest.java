@@ -1,15 +1,16 @@
 package de.xturbo77.steam.news;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
 
 /**
  *
  * @author schmidt
  */
-@Test
+
 public class ISteamNewsClientTest {
 
+    @Test
     public void testGetAppNews() {
         ISteamNewsClient c = new ISteamNewsClient();
         AppNewsResponse news = c.getNewsForApp(436180);
